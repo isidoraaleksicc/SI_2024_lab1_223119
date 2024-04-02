@@ -1,0 +1,45 @@
+4. git init
+5. git remote add origin  https://github.com/isidoraaleksicc/SI_2024_lab1_223119
+6. nano README.md
+   git add README.md
+   git commit -m "Initial commit"
+7.git add SILab1_1.java
+  git add SILab1_2.java
+  git add SILab1Main.java
+  git commit -m "Add starter code"
+9.git checkout master
+  git branch bug1
+  git branch bug2
+10. git checkout bug1
+11. nano SILab1_1.java
+    git add SILab1_1.java
+    git commit -m "Fix wrong condition in filterOddLengthStrings"
+12.
+    git checkout bug2
+13. 
+    nano SILab1_2.java
+    git add SILab1_2.java
+    git commit -m "Fix wrong condition in makeBigStringFrom"
+14. git checkout bug1
+15. nano SILab1Main.java
+    git add SILab1Main.java
+    git commit -m "Call method filterOddLengthStrings in main class"
+16. git checkout bug2
+17. nano SILab1Main.java
+    git add SILab1Main.java
+    git commit -m "Call method makeBigStringFrom in main class"
+18. git push --all origin - so ovaa komanada site raboti sto sum gi pisuvala vo mojot lokalen direktorium se vidlivi na mojot github profil
+19. git checkout master
+20. git merge bug1 - So ovaa komanda bez nikakov konflikt  gi spojuvame master i bug1 so fast forward
+21. git push --all origin
+22. git checkout bug2
+23. git rebase master- So izvrsuvanje na ovaa komanda mi se pojavuva konflikt na git bash terminalot
+24. git checkout master
+    So ovaa komanda mi bara da go sredam konfliktot so master    
+     So racno sreduvanje na konfliktot i so git add SILab1Main.java i so git rebase --continue , konfliktot e sreden
+
+25. git merge bug2
+26. git pull
+    git push --all origin
+    Ovaa naredna mi pravese problemi pa zatoa morav da upotrebam git push origin bug2 --force
+Spojuvanjeto e fast-forward
